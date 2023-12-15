@@ -1,0 +1,32 @@
+JMP 3
+SMV 3
+HLT
+
+WMR 5
+WMR 5
+WMR 1
+WMR 0
+
+LDA 3
+ADD 0
+STA 3
+
+LDA 1
+SUB 2
+STA 1
+
+JMZ 1
+JMP 8
+
+---------------------------------------------
+MEM = {5,5,1,0}
+
+HLT
+LDA 3
+ADD 0
+STA 3
+LDA 1
+SUB 2
+STA 1
+JMZ 0
+JMP 1

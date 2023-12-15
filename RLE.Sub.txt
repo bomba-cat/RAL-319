@@ -1,0 +1,17 @@
+WMR 7
+WMR 3
+WMR 0
+LDA 0
+SUB 1
+STA 2
+SMV 2
+HLT
+
+------------------------
+MEM = {7,3,0}
+
+LDA 0
+SUB 1
+STA 2
+SMV 2
+HLT

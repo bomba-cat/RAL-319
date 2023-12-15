@@ -1,0 +1,51 @@
+JMP 3
+SMV 2
+HLT
+
+WMR 0   //First Number
+WMR 1   //Second Number
+WMR 0   //Result
+WMR 10  //Max Tries
+WMR 1   //Tries Decrementation
+
+LDA 3
+SUB 4
+STA 3
+
+JMZ 1
+
+LDA 0
+ADD 1
+STA 2
+
+LDA 1
+STA 0
+
+LDA 2
+STA 1
+
+LDA 3
+SUB 4
+STA 3
+
+JMP 12
+
+---------------------------------------------------------
+MEM = {0,1,0,10,1}
+
+HLT
+LDA 3
+SUB 4
+STA 3
+JMZ 0
+LDA 0
+ADD 1
+STA 2
+LDA 1
+STA 0
+LDA 2
+STA 1
+LDA 3
+SUB 4
+STA 3
+JMP 4
